@@ -692,7 +692,7 @@
 
 
 /* 모바일 */
-@media (max-width:599px)
+@media screen and (max-width:599px)
 {
 
 /*위로 올라기는 버튼*/ 
