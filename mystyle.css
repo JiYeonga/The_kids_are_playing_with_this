@@ -5,8 +5,7 @@
 {
 
     .row{
-        /*width: 1240px;*/
-        width: 100vw;
+        width: 1240px;
         margin: auto;
         justify-content: center;
     }
@@ -692,7 +691,7 @@
 
 
 /* 모바일 */
-@media screen and (max-width:599px)
+@media (max-width:599px)
 {
 
 /*위로 올라기는 버튼*/ 
