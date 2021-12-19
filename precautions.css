@@ -370,9 +370,8 @@
         color: white;
         font-size: 0.8rem;
         line-height: 20px;
-        padding-top: 20px;
-        padding-right: 10px;
-        padding-left: 23px;
+        padding-top: 1.3rem;
+        text-align: center;
         width: 350px;
         opacity: 0.7;
     }
@@ -382,7 +381,7 @@
         color: white;
         font-size: 0.7rem;
         line-height: 20px;
-        padding-top: 15px;
+        padding-top: 1.5rem;
         width: 350px;
         opacity: 0.7;
         text-align: center;
