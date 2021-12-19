@@ -1,0 +1,389 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Noto+Serif+KR:wght@400;700;900&family=Special+Elite&display=swap');
+
+
+
+@media (min-width:600px)
+{
+    .row{
+        width: 1080px;
+        margin: auto;
+        justify-content: center;
+    }
+
+    body{
+        margin: 0;
+        background-color: dimgray; 
+        background-image: url(background.png);
+        background-repeat: none;
+        background-attachment: fixed;
+    }
+    
+    #body{
+        width: 1240px;
+        height: 100%;
+        display: block;
+        justify-content: center;
+        justify-items: center;
+    }
+
+/*헤더*/
+
+    header{
+        width: 1240px
+    }
+    
+    hr{
+        height: 2px;
+        width: 1240px;
+        background-color: white;
+        border: none;
+        mix-blend-mode: overlay;
+    }
+    
+    #title{
+        font-family: 'Black Han Sans';
+        font-size: 5.4rem;
+        text-align: center;
+        margin-top: 40px;
+        color: white;
+    }
+
+    #title_in1{
+        mix-blend-mode: overlay;
+    }
+
+    #title_in2{
+        position: relative;
+        top: -108.2px;
+        mix-blend-mode: overlay;
+        opacity: 0.7;
+    }
+    
+    p{
+        margin: 0;
+    }
+    
+    #subTitle{
+        color: white;
+        font-family: 'Noto Serif KR', serif;
+        font-size: 1.6rem;
+        font-weight: 700;
+        text-align: center;
+        margin-top: -90px;
+        margin-bottom: 50px;
+    }
+    
+    .menu{
+        width: 1240px;
+        color: white;
+        font-family: 'Noto Serif KR', serif;
+        font-weight: 700;
+        margin-bottom: 10px;
+        margin-top: 50px;
+    }
+    
+    #menu1{
+        text-align: left;
+        list-style: none;
+        align-content: left;
+        margin-left: 10px;
+        font-size: 1.3rem;
+    }
+    
+/*메인*/
+    
+    main{
+        height: 1100px;
+    }
+    
+    
+    /*주의사항*/
+    .mainTitle{
+        font-family: 'Noto Serif KR', serif;
+        color: red;
+        font-size: 1.5rem;
+        font-weight: 700;
+        text-align: center;
+        padding-top: 100px;
+        padding-bottom: 50px;
+    }
+
+    .box{
+        display: flex;
+        align-content: center;
+        align-items: center;
+    }
+
+    .num{
+        font-family: 'Special Elite', cursive;
+        font-size: 3rem;
+        color: white;
+        padding-left: 100px;
+        padding-right: 40px;
+        padding-top: 10px;
+        mix-blend-mode: overlay;
+    }
+    
+    h2{
+        font-family: 'Noto Serif KR', serif;
+        color: rgb(200, 200, 200);
+        font-size: 1.1rem;
+        font-weight: 500;
+        line-height: 40px;
+    }
+    
+    a:link { color: white; text-decoration: none;}
+    a:visited { color: white; text-decoration: none;}
+    a:hover { color: white; text-decoration: none;}
+    
+
+/*푸터*/
+    
+    #footerTitle{
+        font-family: 'Noto Serif KR', serif;
+        color: white;
+        font-weight: 700;
+        font-size: 1.3rem;
+        padding-top: 66px;
+        text-align: center;
+        opacity: 0.7;
+    }
+    
+    #footerText{
+        display: inline-flex;
+        padding-bottom: 90px;
+    }
+    
+    #footerText1_pc{
+        font-family: 'Noto Serif KR', serif;
+        color: white;
+        font-size: 1rem;
+        line-height: 40px;
+        padding-top: 66px;
+        padding-right: 20px;
+        padding-left: 120px;
+        width: 640px;
+        text-align: right;
+        opacity: 0.7;
+    }
+
+    #footerText1_mobile{
+        display: none;
+    }
+    
+    #footerText2{
+        font-family: 'Noto Serif KR', serif;
+        color: white;
+        font-size: 1rem;
+        line-height: 40px;
+        padding-top: 66px;
+        width: 350px;
+        opacity: 0.7;
+    }
+
+    #mobile{
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 모바일 */
+@media (max-width:599px)
+{
+    .row{
+        width: 370px;
+        margin: auto;
+        justify-content: center;
+    }
+
+    body{
+        margin: 0;
+        background-color: dimgray; 
+        background-image: url(background.png);
+        background-repeat: none;
+        background-attachment: fixed;
+    }
+
+    #body{
+        width: 370px;
+        display: block;
+        justify-content: center;
+    }
+
+
+/*헤더*/    
+
+    header{
+        width: 370px;
+        margin: 0px;
+    }
+
+    hr{
+        height: 2px;
+        width: 360px;
+        background-color: white;
+        border: none;
+        mix-blend-mode: overlay;
+    }
+
+    #title{
+        font-family: 'Black Han Sans';
+        font-size: 2rem;
+        text-align: center;
+        margin-top: 20px;
+        width: 370px;
+        justify-content: center;
+        color: white;
+    }
+
+    #title_in1{
+        mix-blend-mode: overlay;
+    }
+
+    #title_in2{
+        position: relative;
+        top: -40px;
+        mix-blend-mode: overlay;
+    }
+
+    p{
+        margin: 0;
+    }
+
+    #subTitle{
+        color: rgb(218, 205, 190);
+        font-family: 'Noto Serif KR', serif;
+        font-size: 1rem;
+        font-weight: 700;
+        text-align: center;
+        margin-top: -30px;
+        margin-bottom: 20px;
+    }
+
+    .menu{
+        width: 360px;
+        color: white;
+        font-family: 'Noto Serif KR', serif;
+        font-weight: 700;
+        margin-bottom: 10px;
+        margin-top: 15px;
+    }
+
+    #menu1{
+        text-align: right;
+        list-style: none;
+        align-content: right;
+        font-size: 1rem;
+    }
+
+/*메인*/
+
+    main{
+        height: 1700px;
+        width: 370px;
+        margin: 0px;
+        display: inline-block;
+        justify-content: center;
+    }
+
+    #pc{
+        display: none;
+    }
+    
+    
+    /*주의사항*/
+    .mainTitle{
+        font-family: 'Noto Serif KR', serif;
+        color: red;
+        font-size: 1.2rem;
+        font-weight: 700;
+        text-align: center;
+        padding-top: 50px;
+        margin-bottom: 10px;
+    }
+    
+    h2{
+        font-family: 'Noto Serif KR', serif;
+        color: rgb(200, 200, 200);
+        font-size: 1rem;
+        font-weight: 500;
+        padding-top: 20px;
+        padding-left: 10px;
+        padding-right: 10px;
+        line-height: 30px;
+    }
+
+    .num{
+        font-family: 'Noto Serif KR', serif;
+        font-size: 1.2rem;
+        text-align: center;
+        color: white;
+        margin-bottom: 10px;
+        padding-top: 50px;
+        
+    }
+    
+    a:link { color: white; text-decoration: none;}
+    a:visited { color: white; text-decoration: none;}
+    a:hover { color: white; text-decoration: none;}
+
+/*푸터*/
+
+    footer{
+        margin-top: 50px;
+        width: 370px;
+        margin: 0px;
+    }
+
+    #footerTitle{
+        font-family: 'Noto Serif KR', serif;
+        color: white;
+        font-size: 1rem;
+        padding-top: 20px;
+        text-align: center;
+        opacity: 0.7;
+    }
+    
+    #footerText{
+        justify-content: center;
+        padding-bottom: 30px;
+    }
+    
+    #footerText1_pc{
+        display: none;
+    }
+
+    #footerText1_mobile{
+        font-family: 'Noto Serif KR', serif;
+        color: white;
+        font-size: 0.8rem;
+        line-height: 20px;
+        padding-top: 20px;
+        padding-right: 10px;
+        padding-left: 23px;
+        width: 350px;
+        opacity: 0.7;
+    }
+    
+    #footerText2{
+        font-family: 'Noto Serif KR', serif;
+        color: white;
+        font-size: 0.7rem;
+        line-height: 20px;
+        padding-top: 15px;
+        width: 350px;
+        opacity: 0.7;
+        text-align: center;
+    }
+}

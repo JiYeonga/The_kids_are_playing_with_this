@@ -1,0 +1,1319 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Noto+Serif+KR:wght@400;700;900&display=swap');
+
+/* pc */
+@media (min-width:600px)
+{
+
+    .row{
+        width: 1240px;
+        margin: auto;
+        justify-content: center;
+    }
+
+    body{
+        margin: 0;
+        background-color: dimgray; 
+        background-image: url(background.png);
+        background-repeat: none;
+        background-attachment: fixed;
+    }
+
+    #body{
+        width: 1240px;
+        height: 100%;
+    }
+
+/*배경 효과*/
+    #babyHead{
+        position: fixed;
+        padding-left: 200px;
+        opacity: 0;
+        margin-top: 100px;
+        margin-left: -190px;
+        transform: rotate(-15deg);
+        animation-name: fadeOut;
+        animation-duration: 5s;
+        animation-delay: 10s; 
+        animation-iteration-count: infinite;
+        animation-timing-function: ease;
+        animation-direction: alternate;
+    }
+
+    .backFace{
+        width: 250px;
+    }
+
+    #babyHead2{
+        position: fixed;
+        padding-left: 1000px;
+        padding-top: 200px;
+        margin-top: 250px;
+        opacity: 0;
+        transform: rotate(20deg);
+        animation-name: fadeOut;
+        animation-duration: 3s;
+        animation-delay: 15s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease;
+        animation-direction: alternate;
+    }
+
+    .backFace2{
+        width: 150px;
+    }
+    
+    @keyframes fadeOut {
+        from{
+            opacity: 0;
+        }
+        to{
+            opacity: 0.3;
+        }
+    }
+
+
+    /*위로 올라기는 버튼*/ 
+    #topBtn{
+        position: fixed;
+        height: 45px;
+        width: 55px;
+        right: 25px;
+        margin-right: 0px;
+        bottom: 20px;
+        opacity: 0.2;
+        font-family: 'Black Han Sans';
+        font-size: 1.2rem;
+        border: none;
+        border-radius: 10%;
+        z-index: 100;
+    }
+
+    #topBtn:hover{
+        opacity: 1;
+    }
+
+/*헤더*/
+    header{
+        width: 1240px;
+    }
+
+    hr{
+        height: 2px;
+        width: 1240px;
+        background-color: white;
+        border: none;
+        mix-blend-mode: overlay;
+    }
+
+    #title{
+        font-family: 'Black Han Sans';
+        font-size: 5.4rem;
+        text-align: center;
+        margin-top: 40px;
+        color: white;
+    }
+
+    #title_in1{
+        mix-blend-mode: overlay;
+    }
+
+    #title_in2{
+        position: relative;
+        top: -108.2px;
+        mix-blend-mode: overlay;
+    }
+
+    p{
+        margin: 0;
+    }
+
+    #subTitle{
+        color: rgb(218, 205, 190);
+        font-family: 'Noto Serif KR', serif;
+        font-size: 1.6rem;
+        font-weight: 700;
+        text-align: center;
+        margin-top: -90px;
+        margin-bottom: 50px;
+        opacity: 0.8;
+    }
+
+    .menu{
+        width: 100px;
+        color: white;
+        font-family: 'Noto Serif KR', serif;
+        font-weight: 700;
+        margin-bottom: 10px;
+        margin-top: 50px;
+    }
+
+    #menu1{
+        text-align: left;
+        list-style: none;
+        align-content: left;
+        margin-left: 10px;
+        font-size: 1.3rem;
+    }
+
+    a:link { color: white; text-decoration: none;}
+    a:visited { color: white; text-decoration: none;}
+    a:hover { color: red; text-decoration: none;}
+
+/*메인*/
+
+    main{
+        height: 7000px;
+        display: block;
+    }
+/*메인-타이틀*/
+    .mainTitle{
+        color: white;
+        font-family: 'Noto Serif KR', serif;
+        font-weight: 700;
+        font-size: 1.6rem;
+        padding-left: 100px;
+        position: relative;
+        top: -70px;
+    }
+
+    .mainTitle2{
+        color: white;
+        font-family: 'Noto Serif KR', serif;
+        font-weight: 700;
+        font-size: 1.6rem;
+        padding-right: 100px;
+        text-align: right;
+        position: relative;
+        left: -550px;
+        top: -70px;
+    }
+
+/*메인-본문(pc와 모바일)*/
+
+    .mainText_pc{
+        color: white;
+        width: 480px;
+        font-family: 'Noto Serif KR', serif;
+        font-size: 1.1rem;
+        line-height: 30px;
+        padding-left: 100px;
+        position: relative;
+        top: 0px;
+    }
+
+    .mainText_mobile{
+        display: none;
+    }
+
+    .mainText2_pc{
+        color: white;
+        width: 480px;
+        font-family: 'Noto Serif KR', serif;
+        font-size: 1.1rem;
+        line-height: 30px;
+        padding-right: 100px;
+        position: relative;
+        left: -550px;
+        top: 0px;
+    }
+
+    .mainText2_mobile{
+        display: none;
+    }
+
+/*이미지 전체 설정*/
+
+    .img{
+        width: 300px;
+        margin-left: 30px;
+        margin-right: 30px;
+        padding-left: 20px;
+    }
+
+
+/*이미지 슬라이드*/
+    .ImgSlide{
+        position: relative;
+    }
+
+    .ImgSlide2{
+        position: relative;
+        left: 560px;
+    }
+
+    .slide{
+        height: 800px;
+        display: inline-flex;
+        align-items: center;
+        position: absolute;
+        transition: 0.5s;
+        left: 0px;
+    }
+
+/*이미지 슬라이드-버튼*/
+
+    .Btn{
+        z-index: 10;
+        width: 40px;
+        height: 50px;
+        border: none;
+        background-color: rgba(0, 0, 0, 0);
+        opacity: 0.7;
+        cursor: grab;
+        position: absolute;
+        top: 400px;
+    }
+
+    .Btn:hover{
+        opacity: 1;
+    }
+
+    .leftBtn{
+        width: 20px;
+        height: 30px;
+    }
+
+    .rightBtn{
+        width: 20px;
+        height: 30px;
+    }    
+
+/*인형들 각각의 콘텐츠 박스 - 총 6개*/
+
+    .contents{
+        width: 1240px;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+    }
+/*인형들 각각의 콘텐츠 박스 - 애나벨은 다르게 배치*/
+    .contents:last-child{
+        display: flex;
+        justify-content: center;
+    }
+
+/*기어다니는 아기 인형*/
+
+    #contentB{
+        width: 1240px;
+        height: 900px;
+        margin-top: -100px;
+        padding-top: 50px;
+        top: 0;
+        position: sticky;
+        display: inline-flex;
+        align-items: center;
+    }
+
+    .slideB{
+        display: inline-flex;
+        align-items: center;
+        width: 600px;
+        height: 800px;
+        left: 30px;
+        position: relative;
+        overflow: hidden;
+    }
+
+    #b{
+        transform: rotate(-10deg);
+        height: 500px;
+        width: 490px;
+    }
+
+    #bb{
+        transform: rotate(5deg);
+        height: 500px;
+        width: 490px;
+    }
+
+    #bbb{
+        transform: rotate(-5deg);
+        height: 500px;
+        width: 490px;
+    }
+
+/*히나 인형*/
+
+    #contentH{
+        width: 1240px;
+        height: 900px;
+        top: 0;
+        padding-top: 50px;
+        position: sticky;
+        display: inline-flex;
+        align-items: center;
+        margin-top: 300px;
+    }
+
+    .slideH{
+        display: inline-flex;
+        align-items: center;
+        width: 540px;
+        height: 800px;
+        position: relative;
+        overflow: hidden;
+    }
+
+    #h{
+        transform: rotate(10deg);
+        height: 500px;
+        width: 490px;
+    }
+
+    #hh{
+        transform: rotate(5deg);
+        height: 500px;
+        width: 490px;
+    }
+
+    #hhh{
+        transform: rotate(-5deg);
+        height: 500px;
+        width: 490px;
+    }
+
+/*로버트 인형*/
+
+    #contentR{
+        width: 1240px;
+        height: 900px;
+        top: 0;
+        margin-top: 300px;
+        padding-top: 50px;
+        position: sticky;
+        display: inline-flex;
+        align-items: center;
+    }
+
+    .slideR{
+        display: inline-flex;
+        align-items: center;
+        width: 540px;
+        height: 800px;
+        position: relative;
+        overflow: hidden;
+    }
+
+    #r{
+        transform: rotate(-5deg);
+        height: 500px;
+        width: 490px;
+    }
+
+    #rr{
+        transform: rotate(5deg);
+        height: 500px;
+        width: 490px;
+    }
+
+    #rrr{
+        transform: rotate(10deg);
+        height: 500px;
+        width: 490px;
+    }
+
+/*맨디 인형*/
+
+    #contentM{
+        width: 1240px;
+        height: 900px;
+        top: 0;
+        padding-top: 100px;
+        position: sticky;
+        display: inline-flex;
+        align-items: center;
+    }
+
+    .slideM{
+        display: inline-flex;
+        align-items: center;
+        width: 540px;
+        height: 800px;
+        position: relative;
+        overflow: hidden;
+    }
+
+    #m{
+        transform: rotate(-10deg);
+        height: 500px;
+        width: 490px;
+    }
+
+    #mm{
+        transform: rotate(5deg);
+        height: 500px;
+        width: 490px;
+    }
+
+    #mmm{
+        transform: rotate(-3deg);
+        height: 500px;
+        width: 490px;
+    }
+
+/*기쿠코 인형*/
+
+    #contentG{
+        width: 1240px;
+        height: 900px;
+        padding-top: 100px;
+        top: 0;
+        position: sticky;
+        display: inline-flex;
+        align-items: center;
+    }
+
+    .slideG{
+        display: inline-flex;
+        align-items: center;
+        width: 540px;
+        height: 800px;
+        position: relative;
+        overflow: hidden;
+    }
+
+    #g{
+        transform: rotate(-5deg);
+        height: 500px;
+        width: 470px;
+    }
+
+    #gg{
+        transform: rotate(5deg);
+        height: 500px;
+        width: 470px;
+        margin-left: 60px;
+    }
+
+    #ggg{
+        transform: rotate(-10deg);
+        height: 500px;
+        width: 470px;
+        margin-left: 50px;
+    }
+
+/*애나벨 인형*/
+
+    #contentA{
+        width: 1240px;
+        height: 1080px;
+        top: 0;
+        position: sticky;
+        display: flex;
+        justify-content: center;
+        padding-top: 500px;
+        animation-name: Ani;
+        animation-duration: 2s;
+        animation-timing-function: linear;
+        animation-direction: alternate;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes Ani {
+        0%{
+            transform: scale(1.1);
+        } 
+        5%{
+            transform: scale(1);
+        }
+        10%{
+            transform: scale(1.1);
+        }
+        25%{
+            transform: scale(1);
+        }
+        30%{
+            transform: scale(1.1);
+        }
+        100%{
+            transform: scale(1.1);
+        }
+    }
+
+    .slideA{
+        display: inline-flex;
+        align-items: center;
+        width: 540px;
+        height: 800px;
+        position: relative;
+        overflow: hidden;
+        left: -120px;
+        top: -220px;
+    }
+
+    #a{
+        transform: rotate(-10deg);
+        height: 500px;
+        width: 490px;
+    }
+
+    #aa{
+        transform: rotate(5deg);
+        height: 500px;
+        width: 490px;
+    }
+
+    #aaa{
+        transform: rotate(-7deg);
+        height: 500px;
+        width: 490px;
+    }
+
+/*애나벨 전용 글씨 스타일*/
+
+    .mainText2_pcA{
+        color: white;
+        width: 800px;
+        font-family: 'Noto Serif KR', serif;
+        font-size: 1.1rem;
+        line-height: 30px;
+        padding-right: 100px;
+        position: relative;
+        text-align: center;
+        left: -200px;
+        top: 200px;
+    }
+
+    .mainTitle2_A{
+        color: white;
+        font-family: 'Noto Serif KR', serif;
+        font-weight: 700;
+        font-size: 1.3rem;
+        line-height: 40px;
+        padding-right: 100px;
+        text-align: right;
+        position: relative;
+        left: -200px;
+        top: 170px;
+        text-align: center;
+    }
+
+    .A{
+        position: relative;
+        width: 500px;
+        opacity: 0.5;
+        mix-blend-mode: overlay;
+        top: 180px;
+        left: -250px;
+    }
+
+/*애나벨 전용 버튼*/
+
+    .BtnA{
+        z-index: 100;
+        width: 40px;
+        height: 50px;
+        border: none;
+        background-color: rgba(0, 0, 0, 0);
+        opacity: 0.7;
+        cursor: grab;
+        position: absolute;
+        top: 180px;
+    }
+
+    .BtnA:hover{
+        opacity: 1;
+    }
+
+    .leftBtnA{
+        width: 20px;
+        height: 30px;
+        margin-left: -240px;
+    }
+
+    .rightBtnA{
+        width: 20px;
+        height: 30px;
+        margin-left: -200px;
+    }
+
+
+/*푸터*/
+
+    #footerTitle{
+        font-family: 'Noto Serif KR', serif;
+        color: white;
+        font-weight: 700;
+        font-size: 1.3rem;
+        padding-top: 66px;
+        text-align: center;
+        opacity: 0.7;
+    }
+
+    #footerText{
+        display: inline-flex;
+        padding-bottom: 90px;
+    }
+
+    #footerText1_pc{
+        font-family: 'Noto Serif KR', serif;
+        color: white;
+        font-size: 1rem;
+        line-height: 40px;
+        padding-top: 66px;
+        padding-right: 20px;
+        padding-left: 120px;
+        width: 640px;
+        text-align: right;
+        opacity: 0.7;
+    }
+
+    #footerText1_mobile{
+        display: none;
+    }
+
+    #footerText2{
+        font-family: 'Noto Serif KR', serif;
+        color: white;
+        font-size: 1rem;
+        line-height: 40px;
+        padding-top: 66px;
+        width: 350px;
+        opacity: 0.7;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 모바일 */
+@media (max-width:599px)
+{
+
+/*위로 올라기는 버튼*/ 
+    #topBtn{
+        position: fixed;
+        height: 35px;
+        right: 5px;
+        margin-right: 0px;
+        bottom: 5px;
+        opacity: 0.3;
+        font-family: 'Black Han Sans';
+        border: none;
+        border-radius: 10%;
+        z-index: 100;
+    }
+/*body*/
+    .row{
+        width: 370px;
+        margin: auto;
+        justify-content: center;
+    }
+
+    body{
+        margin: 0;
+        background-color: dimgray; 
+        background-image: url(background.png);
+        background-repeat: none;
+        background-attachment: fixed;
+    }
+
+    #body{
+        width: 370px;
+        display: block;
+        justify-content: center;
+    }
+
+/*배경 효과*/
+
+    #babyHead{
+        position: fixed;
+        opacity: 0;
+        margin-top: 100px;
+        margin-left: -130px;
+        transform: rotate(-15deg);
+        animation-name: fadeOut;
+        animation-duration: 5s;
+        animation-delay: 10s; 
+        animation-iteration-count: infinite;
+        animation-timing-function: ease;
+        animation-direction: alternate;
+    }
+
+    .backFace{
+        width: 250px;
+    }
+
+    #babyHead2{
+        position: fixed;
+        padding-left: 300px;
+        padding-top: 200px;
+        margin-top: 280px;
+        opacity: 0;
+        transform: rotate(20deg);
+        animation-name: fadeOut;
+        animation-duration: 3s;
+        animation-delay: 15s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease;
+        animation-direction: alternate;
+    }
+
+    .backFace2{
+        width: 150px;
+    }
+    
+    @keyframes fadeOut {
+        from{
+            opacity: 0;
+        }
+        to{
+            opacity: 0.3;
+        }
+    }
+
+/*헤더*/
+
+    header{
+        width: 370px;
+    }
+
+    hr{
+        height: 2px;
+        width: 360px;
+        background-color: white;
+        border: none;
+        mix-blend-mode: overlay;
+    }
+
+    #title{
+        font-family: 'Black Han Sans';
+        font-size: 2rem;
+        text-align: center;
+        margin-top: 20px;
+        color: white;
+        mix-blend-mode: overlay;
+    }
+
+    #title_in1{
+        mix-blend-mode: overlay;
+    }
+
+    #title_in2{
+        position: relative;
+        top: -40px;
+        mix-blend-mode: overlay;
+    }
+
+    p{
+        margin: 0;
+    }
+
+    #subTitle{
+        color: white;
+        font-family: 'Noto Serif KR', serif;
+        font-size: 1rem;
+        font-weight: 700;
+        text-align: center;
+        margin-top: -30px;
+        margin-bottom: 20px;
+    }
+
+    .menu{
+        width: 80px;
+        float: right;
+        color: white;
+        font-family: 'Noto Serif KR', serif;
+        font-weight: 700;
+        margin-bottom: 10px;
+        margin-top: 15px;
+    }
+
+    #menu1{
+        text-align: right;
+        list-style: none;
+        align-content: right;
+        margin-right: 10px;
+        font-size: 1rem;
+    }
+
+    
+    a:link { color: white; text-decoration: none;}
+    a:visited { color: white; text-decoration: none;}
+    a:hover { color: red; text-decoration: none;}
+
+
+/*메인*/
+
+    main{
+        width: 370px;
+        height: 5750px;
+    }
+
+    .container{
+        justify-items: center;
+    }
+
+/*메인-타이틀*/
+
+    .mainTitle{
+        color: white;
+        font-family: 'Noto Serif KR', serif;
+        font-weight: 700;
+        font-size: 1.2rem;
+        position: relative;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .mainTitle2{
+        color: white;
+        font-family: 'Noto Serif KR', serif;
+        font-weight: 700;
+        font-size: 1.2rem;
+        position: relative;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+/*메인-본문(pc와 모바일)*/
+
+    .mainText_pc{
+        display: none;
+    }
+
+    .mainText_mobile{
+        color: white;
+        width: 350px;
+        font-family: 'Noto Serif KR', serif;
+        font-size: 1rem;
+        line-height: 30px;
+        margin-top: 30px;
+        margin-left: 1px;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        position: relative;
+        background-color: rgba(22, 20, 15, 0.5);
+    }
+
+    .mainText2_pc{
+        display: none;
+    }
+
+    .mainText2_mobile{
+        color: white;
+        width: 350px;
+        font-family: 'Noto Serif KR', serif;
+        font-size: 1rem;
+        line-height: 30px;
+        margin-top: 30px;
+        margin-left: 1px;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        position: relative;
+        background-color: rgba(22, 20, 15, 0.5);
+    }
+
+/*이미지 전체 설정*/
+
+    .img{
+        width: 200px;
+        margin-right: 10px;
+        margin-left: 20px;
+    }
+
+/*이미지 슬라이드*/
+
+    .ImgSlide{
+        position: relative;
+        height: 400px;
+    }
+
+    .ImgSlide2{
+        position: relative;
+        height: 400px;
+    }
+
+    .slide{
+        height: 300px;
+        display: flex;
+        position: absolute;
+        top: 50px;
+        transition: 0.5s;
+        left: 0px;
+    }
+
+/*이미지 슬라이드-버튼*/
+
+    .Btn{
+        z-index: 99;
+        width: 15px;
+        height: 20px;
+        border: none;
+        background-color: rgba(0, 0, 0, 0);
+        opacity: 0.7;
+        cursor: grab;
+        position: absolute;
+        top: 170px;
+    }
+
+    .Btn:hover{
+        opacity: 1;
+    }
+
+    .leftBtn{
+        width: 10px;
+        height: 20px;
+    }
+
+    .rightBtn{
+        width: 10px;
+        height: 20px;
+    }
+
+/*기어다니는 아기 인형*/
+
+    #contentB{
+        width: 370px;
+        height: 900px;
+    }
+
+    .slideB{
+        display: inline-flex;
+        align-items: center;
+        width: 350px;
+        height: 800px;
+        left: 20px;
+        position: relative;
+        overflow: hidden;
+    }
+
+    #b{
+        transform: rotate(-10deg);
+        height: 320px;
+        width: 300px;
+    }
+
+    #bb{
+        transform: rotate(5deg);
+        height: 320px;
+        width: 300px;
+    }
+
+    #bbb{
+        transform: rotate(-5deg);
+        height: 320px;
+        width: 300px;
+    }
+
+/*히나 인형*/
+
+    #contentH{
+        width: 370px;
+        height: 800px;
+        margin-top: 100px;
+        align-items: center;
+    }
+
+    .slideH{
+        display: inline-flex;
+        align-items: center;
+        width: 350px;
+        height: 800px;
+        left: 15px;
+        position: relative;
+        overflow: hidden;
+    }
+
+    #h{
+        transform: rotate(10deg);
+        height: 320px;
+        width: 300px;
+    }
+
+    #hh{
+        transform: rotate(5deg);
+        height: 320px;
+        width: 300px;
+    }
+
+    #hhh{
+        transform: rotate(-5deg);
+        height: 320px;
+        width: 300px;
+    }
+
+/*로버트 인형*/
+
+    #contentR{
+        width: 370px;
+        height: 800px;
+        margin-top: 100px;
+        align-items: center;
+    }
+
+    .slideR{
+        display: inline-flex;
+        align-items: center;
+        width: 350px;
+        height: 800px;
+        left: 15px;
+        position: relative;
+        overflow: hidden;
+    }
+
+    #r{
+        transform: rotate(-5deg);
+        height: 320px;
+        width: 300px;
+    }
+
+    #rr{
+        transform: rotate(5deg);
+        height: 320px;
+        width: 300px;
+    }
+
+    #rrr{
+        transform: rotate(10deg);
+        height: 320px;
+        width: 300px;
+    }
+
+/*맨디 인형*/
+
+    #contentM{
+        width: 370px;
+        height: 1000px;
+        top: 0;
+        margin-top: 100px;
+        align-items: center;
+    }
+
+    .slideM{
+        display: inline-flex;
+        align-items: center;
+        width: 350px;
+        height: 800px;
+        left: 10px;
+        position: relative;
+        overflow: hidden;
+    }
+
+    #m{
+        transform: rotate(-10deg);
+        height: 320px;
+        width: 300px;
+    }
+
+    #mm{
+        transform: rotate(5deg);
+        height: 320px;
+        width: 300px;
+    }
+
+    #mmm{
+        transform: rotate(-3deg);
+        height: 320px;
+        width: 300px;
+    }
+
+/*기쿠코 인형*/
+
+    #contentG{
+        width: 370px;
+        height: 850px;
+        top: 0;
+        margin-top: 100px;
+        align-items: center;
+    }
+
+    .slideG{
+        display: inline-flex;
+        align-items: center;
+        width: 340px;
+        height: 800px;
+        left: 15px;
+        position: relative;
+        overflow: hidden;
+    }
+
+    #g{
+        transform: rotate(-5deg);
+        height: 320px;
+        width: 300px;
+    }
+
+    #gg{
+        transform: rotate(5deg);
+        height: 320px;
+        width: 300px;
+    }
+
+    #ggg{
+        transform: rotate(-5deg);
+        height: 320px;
+        width: 300px;
+    }
+
+/*애나벨 인형*/
+
+    #contentA{
+        width: 370px;
+        height: 800px;
+        margin-top: 250px;
+        align-items: center;
+        animation-name: Ani;
+        animation-duration: 2s;
+        animation-timing-function: linear;
+        animation-direction: alternate;
+        animation-iteration-count: infinite;
+        text-align: center;
+    }
+
+    @keyframes Ani {
+        0%{
+            transform: scale(0.8);
+        } 
+        5%{
+            transform: scale(0.9);
+        }
+        10%{
+            transform: scale(0.8);
+        }
+        25%{
+            transform: scale(0.9);
+        }
+        30%{
+            transform: scale(0.8);
+        }
+        100%{
+            transform: scale(0.8);
+        }
+    }
+    
+
+    .slideA{
+        display: inline-flex;
+        align-items: center;
+        width: 350px;
+        height: 800px;
+        left: 20px;
+        position: relative;
+        overflow: hidden;
+    }
+
+    #a{
+        transform: rotate(-10deg);
+        height: 320px;
+        width: 300px;
+    }
+
+    #aa{
+        transform: rotate(5deg);
+        height: 320px;
+        width: 300px;
+    }
+
+    #aaa{
+        transform: rotate(-7deg);
+        height: 320px;
+        width: 300px;
+    }
+
+    .BtnA{
+        z-index: 99;
+        width: 15px;
+        height: 20px;
+        border: none;
+        background-color: rgba(0, 0, 0, 0);
+        opacity: 0.7;
+        cursor: grab;
+        position: absolute;
+        top: 170px;
+    }
+
+    .BtnA:hover{
+        opacity: 1;
+    }
+
+    .leftBtnA{
+        width: 15px;
+        height: 20px;
+    }
+
+    .rightBtnA{
+        width: 15px;
+        height: 20px;
+    }
+
+    .mainTitle2_A{
+        color: white;
+        font-family: 'Noto Serif KR', serif;
+        font-weight: 700;
+        font-size: 1.2rem;
+        position: relative;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .mainText2_pcA{
+        display: none;
+    }
+
+/*푸터*/
+
+    footer{
+        width: 370px;
+        margin-top: 50px;
+    }
+
+    #footerTitle{
+        font-family: 'Noto Serif KR', serif;
+        color: white;
+        font-size: 1rem;
+        padding-top: 1.5rem;
+        text-align: center;
+        opacity: 0.7;
+    }
+    
+    #footerText{
+        justify-content: center;
+        padding-bottom: 30px;
+    }
+    
+    #footerText1_pc{
+        display: none;
+    }
+
+    #footerText1_mobile{
+        font-family: 'Noto Serif KR', serif;
+        color: white;
+        font-size: 0.8rem;
+        line-height: 20px;
+        padding-top: 1.5rem;
+        text-align: center;
+        width: 350px;
+        opacity: 0.7;
+    }
+    
+
+    #footerText2{
+        font-family: 'Noto Serif KR', serif;
+        color: white;
+        font-size: 0.7rem;
+        line-height: 20px;
+        padding-top: 1.5rem;
+        width: 350px;
+        opacity: 0.7;
+        text-align: center;
+    }
+}
