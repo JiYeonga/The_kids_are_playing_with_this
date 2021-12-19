@@ -358,6 +358,7 @@
     #footerText{
         justify-content: center;
         padding-bottom: 30px;
+        width: 360px;
     }
     
     #footerText1_pc{
