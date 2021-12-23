@@ -503,11 +503,11 @@
         display: flex;
         justify-content: center;
         padding-top: 500px;
-        animation-name: Ani;
+    /*    animation-name: Ani;
         animation-duration: 2s;
         animation-timing-function: linear;
         animation-direction: alternate;
-        animation-iteration-count: infinite;
+        animation-iteration-count: infinite; */
     }
 
 /*
@@ -1173,11 +1173,11 @@
         height: 800px;
         margin-top: 250px;
         align-items: center;
-        animation-name: Ani;
+      /*  animation-name: Ani;
         animation-duration: 2s;
         animation-timing-function: linear;
         animation-direction: alternate;
-        animation-iteration-count: infinite;
+        animation-iteration-count: infinite; */
         text-align: center;
     }
 
