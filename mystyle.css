@@ -510,6 +510,7 @@
         animation-iteration-count: infinite;
     }
 
+/*
     @keyframes Ani {
         0%{
             transform: scale(1.1);
@@ -530,6 +531,7 @@
             transform: scale(1.1);
         }
     }
+*/
 
     .slideA{
         display: inline-flex;
@@ -1179,6 +1181,7 @@
         text-align: center;
     }
 
+    /*
     @keyframes Ani {
         0%{
             transform: scale(0.8);
@@ -1199,7 +1202,7 @@
             transform: scale(0.8);
         }
     }
-    
+    */
 
     .slideA{
         display: inline-flex;
